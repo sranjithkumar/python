@@ -1,0 +1,21 @@
+def search(l,n,a):
+ for i in range(0,a):
+ 
+  if l[i] == n:
+   return 2
+ else:
+   return -1
+  
+ 
+
+def main():
+
+ a = input("Enter the list range:")
+ l = [input("Enter the list elements:") for _ in range(a)]
+ print "The list is:",l
+ l.sort()
+ print "sorted list:",l
+ n = input("Enter the list element:")
+ print "value:", search(l,n,a)
+
+main()
